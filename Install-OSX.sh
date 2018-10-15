@@ -1,0 +1,1 @@
+# TODO: patch palm-generate to add vscode scripts

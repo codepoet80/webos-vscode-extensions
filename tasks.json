@@ -1,0 +1,38 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "palm-run",
+            "type": "shell",
+            "command": "./_scripts/run.sh",
+            "windows": {
+                "command": ".\\_scripts\\run.bat"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "palm-build",
+            "type": "shell",
+            "command": "./_scripts/build.sh",
+            "windows": {
+                "command": ".\\_scripts\\build.bat"
+            },
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        }
+    ]
+}

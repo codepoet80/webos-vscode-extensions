@@ -1,0 +1,1 @@
+palm-package "%cd%" -o "./_bin"
