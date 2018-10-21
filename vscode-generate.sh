@@ -22,10 +22,13 @@ then
         echo adding visualstudio code extensions
         SCRIPTS_DIR="$PROJECT_PATH/_scripts"
         BIN_DIR="$PROJECT_PATH/_bin"
-        VSCODE_DIR="$(abs_path "$HERE/../vscode")"
+        VSCODE_DIR="$PROJECT_PATH/.vscode"
+        EXT_DIR="$(abs_path "$HERE/../vscode")"
         mkdir $SCRIPTS_DIR || true
         mkdir $BIN_DIR || true
-        cp $VSCODE_DIR/_scripts/* $SCRIPTS_DIR
-        cp $VSCODE_DIR/tasks.json $PROJECT_PATH
+        mkdir $VSCODE_DIR || true
+        cp $EXT_DIR/_scripts/* $SCRIPTS_DIR
+        cp $EXT_DIR/tasks.json $VSCODE_DIR
+        chmod +x $SCRIPTS_DIR/*.sh
     fi
 fi
