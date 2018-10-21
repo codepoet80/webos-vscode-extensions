@@ -4,5 +4,5 @@ git reset --hard
 git pull
 ./Install-OSX.sh
 echo
-echo Existing projects will need to be re-generated.
-echo Alternatively, manually update tasks.json.
+echo Existing projects may need to be re-generated.
+echo Alternatively, manually update scripts and tasks.json using this folder.

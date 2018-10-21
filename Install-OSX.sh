@@ -17,3 +17,7 @@ else
    cat "./palm-generate-additions.sh" >> "$PALM_SCRIPTS/bin/palm-generate"
    echo Done! Install Completed
 fi
+echo
+echo To create a VSCode-ready webOS app use:
+echo palm-generate -t new_app \~/Projects/YourNewApp
+echo
