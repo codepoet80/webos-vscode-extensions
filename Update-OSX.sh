@@ -14,3 +14,4 @@ git pull
 echo
 echo Existing projects may need to be re-generated.
 echo Alternatively, manually update scripts and tasks.json using this folder.
+read -rsp $'Press any key to continue . . .\n' -n1 key
