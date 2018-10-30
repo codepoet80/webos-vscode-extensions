@@ -1,3 +1,10 @@
+#!/bin/bash
+#Check for sufficient privileges
+if [ "$EUID" -ne 0 ]; then
+  echo "Please run as root"
+  exit
+fi
+echo
 echo Patching Palm webOS SDK to add VisualStudio Code extensions . . .
 PALM_SCRIPTS=/opt/PalmSDK/0.1
 if [ ! -d "$PALM_SCRIPTS/vscode" ]; then
@@ -10,6 +17,8 @@ yes | cp ./vscode-*.sh $PALM_SCRIPTS/bin/
 yes | cp ./_scripts/* $PALM_SCRIPTS/vscode/_scripts
 yes | cp ./tasks.json $PALM_SCRIPTS/vscode/tasks.json
 
+# On Unix we can just append a new line to Palm's generate script
+# But let's make sure we don't do that repeatedly
 if grep -R "# vscode additions" "$PALM_SCRIPTS/bin/palm-generate" > /dev/null
 then
    echo Done! Existing Install Updated

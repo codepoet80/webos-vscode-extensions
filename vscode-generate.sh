@@ -29,6 +29,7 @@ then
         mkdir $VSCODE_DIR || true
         cp $EXT_DIR/_scripts/* $SCRIPTS_DIR
         cp $EXT_DIR/tasks.json $VSCODE_DIR
+        #Tell OS to make scripts executable
         chmod +x $SCRIPTS_DIR/*.sh
     fi
 fi
