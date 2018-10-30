@@ -38,4 +38,6 @@ echo.
 echo To create a VSCode-ready webOS app use:
 echo palm-generate -t new_app "%userprofile%\Projects\YourNewAppName"
 echo.
-pause
+if "%1" neq "silent" ( 
+    pause 
+)
