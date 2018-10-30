@@ -5,6 +5,7 @@ if not %ERRORLEVEL% equ 0 (	echo Please run with Elevated Privileges
      pause
      exit /b 1
 )
+cd "%~dp0"
 echo.
 echo Patching Palm webOS SDK to add VisualStudio Code extensions . . .
 set "PALM_SCRIPTS=C:\Program Files (x86)\HP webOS\SDK"

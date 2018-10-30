@@ -5,6 +5,7 @@ if not %ERRORLEVEL% equ 0 (	echo Please run with Elevated Privileges
      pause
      exit /b 1
 )
+cd "%~dp0"
 echo.
 echo Updating and Re-installing VisualStudio Code Extensions for webOS
 echo.
