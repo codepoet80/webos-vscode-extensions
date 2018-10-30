@@ -11,7 +11,7 @@ echo.
 git reset --hard
 git pull
 call Install-Windows.cmd silent
-echo.
+
 echo Existing projects will need to be re-generated.
 echo Alternatively, manually update tasks.json.
 pause
