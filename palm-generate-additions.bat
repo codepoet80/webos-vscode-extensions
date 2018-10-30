@@ -27,7 +27,7 @@ set JAR=!JARS_DIR!\!JAR_FILE!
 
 @rem launch the app
 java %VM_ARG1% -jar "%JAR%" %*
-REM vscode additions
+@rem vscode additions
 "%HERE%/vscode-generate.bat" %*
 exit /b 0
  
