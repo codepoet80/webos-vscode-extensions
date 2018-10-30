@@ -2,6 +2,7 @@
 #Check for sufficient privileges
 if [ "$EUID" -ne 0 ]; then
   echo "Please run with Elevated Privileges"
+  read -rsp $'Press any key to continue . . .\n' -n1 key
   exit
 fi
 echo
@@ -26,6 +27,7 @@ else
    cat "./palm-generate-additions.sh" >> "$PALM_SCRIPTS/bin/palm-generate"
    echo Done! Install Completed
 fi
+
 echo
 echo To create a VSCode-ready webOS app use:
 echo palm-generate -t new_app \~/Projects/YourNewApp

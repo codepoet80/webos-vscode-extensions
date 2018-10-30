@@ -1,7 +1,10 @@
 @echo off
 REM Check for sufficient privileges
 net session > nul 2>&1
-if not %ERRORLEVEL% equ 0 (	echo Please run with Elevated Privileges && exit /b 1 )
+if not %ERRORLEVEL% equ 0 (	echo Please run with Elevated Privileges
+     pause
+     exit /b 1
+)
 echo.
 echo Patching Palm webOS SDK to add VisualStudio Code extensions . . .
 set "PALM_SCRIPTS=C:\Program Files (x86)\HP webOS\SDK"
