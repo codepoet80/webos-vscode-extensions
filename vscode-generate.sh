@@ -20,16 +20,14 @@ then
     PROJECT_PATH="${@: -1}"
     if [ -d "$PROJECT_PATH" ]; then
         echo adding visualstudio code extensions
-        SCRIPTS_DIR="$PROJECT_PATH/_scripts"
-        BIN_DIR="$PROJECT_PATH/_bin"
         VSCODE_DIR="$PROJECT_PATH/.vscode"
+        BIN_DIR="$PROJECT_PATH/_bin"
         EXT_DIR="$(abs_path "$HERE/../vscode")"
-        mkdir $SCRIPTS_DIR || true
-        mkdir $BIN_DIR || true
         mkdir $VSCODE_DIR || true
-        cp $EXT_DIR/_scripts/* $SCRIPTS_DIR
+        mkdir $BIN_DIR || true
+        cp $EXT_DIR/_scripts/* $VSCODE_DIR
         cp $EXT_DIR/tasks.json $VSCODE_DIR
         #Tell OS to make scripts executable
-        chmod +x $SCRIPTS_DIR/*.sh
+        chmod +x $VSCODE_DIR/*.sh
     fi
 fi

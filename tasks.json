@@ -6,9 +6,9 @@
         {
             "label": "palm-run",
             "type": "shell",
-            "command": "./_scripts/run.sh",
+            "command": "./.vscode/run.sh",
             "windows": {
-                "command": ".\\_scripts\\run.bat"
+                "command": ".\\.vscode\\run.bat"
             },
             "problemMatcher": [],
             "group": {
@@ -23,9 +23,9 @@
         {
             "label": "palm-build",
             "type": "shell",
-            "command": "./_scripts/build.sh",
+            "command": "./.vscode/build.sh",
             "windows": {
-                "command": ".\\_scripts\\build.bat"
+                "command": ".\\.vscode\\build.bat"
             },
             "problemMatcher": [],
             "group": "build",
