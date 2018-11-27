@@ -32,6 +32,6 @@ echo
 echo To create a VSCode-ready webOS app use:
 echo palm-generate -t new_app \~/Projects/YourNewApp
 echo
-if ["$1" -ne "silent"]; then
-    read -rsp $'Press any key to continue . . .\n' -n1 key
+if [ "$1" != "silent" ]; then
+     read -rsp $'Press any key to continue . . .\n' -n1 key
 fi
