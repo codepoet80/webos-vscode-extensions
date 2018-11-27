@@ -17,6 +17,8 @@ fi
 yes | cp ./vscode-*.sh $PALM_SCRIPTS/bin/
 yes | cp ./_scripts/* $PALM_SCRIPTS/vscode/_scripts
 yes | cp ./tasks.json $PALM_SCRIPTS/vscode/tasks.json
+#Tell OS to make scripts executable
+chmod +x $PALM_SCRIPTS/vscode/_scripts/*.sh
 
 # On Unix we can just append a new line to Palm's generate script
 # But let's make sure we don't do that repeatedly

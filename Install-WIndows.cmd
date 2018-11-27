@@ -18,6 +18,9 @@ if not exist "%PALM_SCRIPTS%\vscode\_scripts" (
 copy "%~dp0\vscode-*.bat" "%PALM_SCRIPTS%\bin\" /y >nul
 copy "%~dp0\_scripts\*.bat" "%PALM_SCRIPTS%\vscode\_scripts\" /y >nul
 copy "%~dp0\tasks.json" "%PALM_SCRIPTS%\vscode\tasks.json" /y >nul
+REM Tell Windows not to block script execution
+echo.>"%PALM_SCRIPTS%\vscode\_scripts\build.bat":Zone.Identifier
+echo.>"%PALM_SCRIPTS%\vscode\_scripts\run.bat":Zone.Identifier
 
 REM On Windows, Palm chose to force the generate script to exit as soon as the Java command was done
 REM For this reason the script can't simply be patched, either the line or the whole file has to be replaced
