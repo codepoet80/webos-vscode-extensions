@@ -15,7 +15,7 @@ where_am_i()
 
 HERE="$(where_am_i "$0")"
 
-if [[ "$@" =~ "new_app" ]]
+if [[ "$@" !=~ "new_scene" ]]
 then
     PROJECT_PATH="${@: -1}"
     if [ -d "$PROJECT_PATH" ]; then

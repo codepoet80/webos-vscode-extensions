@@ -1,6 +1,6 @@
 SETLOCAL EnableDelayedExpansion
 set args="%*"
-if not x%args:new_app=%==x%args% (
+if x%args:new_scene=%==x%args% (
     call :lastarg %*
     set "PROJECT_PATH=!LAST_ARG!"
     if exist "!PROJECT_PATH!" (
