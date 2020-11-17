@@ -8,6 +8,6 @@ Run `./Install-OSX.sh` on Mac, or `Install-Windows.cmd` on Windows with Admin pr
 
 This will add some Terminal tasks to VSCode to Run and Build your webOS app from the IDE's "Terminal" menu. When you run, you'll get log messages from your app in the IDE's debug window.
 
-<img src="https://raw.githubusercontent.com/codepoet80/webos-vscode-extensions/master/screenshots/WebOS-VSCode-Mac.png" width="512">
+<img src="https://raw.githubusercontent.com/codepoet80/webos-vscode-extensions/main/screenshots/WebOS-VSCode-Mac.png" width="512">
 
-<img src="https://raw.githubusercontent.com/codepoet80/webos-vscode-extensions/master/screenshots/WebOS-VSCode-Windows.png" width="512">
+<img src="https://raw.githubusercontent.com/codepoet80/webos-vscode-extensions/main/screenshots/WebOS-VSCode-Windows.png" width="512">
