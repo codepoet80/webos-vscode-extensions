@@ -23,7 +23,7 @@
             }
         },
         {
-            "label": "palm-build",
+            "label": "palm-package",
             "type": "shell",
             "command": "palm-package",
             "args": ["${workspaceFolder}", "-o", "${workspaceFolder}/_bin"],
