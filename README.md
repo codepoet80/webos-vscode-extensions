@@ -2,7 +2,7 @@
 
 This is a work-in-progress to patch the Palm/HP webOS SDK to include some helpful features for developing with VisualStudio Code, like building, and running (with debug output!) right from the IDE.
 
-Assumes the webOS SDK is already installed -- if you need help with that, check out: <a href="https://codepoet80.github.io/webos-sdk-archive/">https://codepoet80.github.io/webos-sdk-archive/</a>. 
+Assumes the webOS SDK is already installed -- if you need help with that, check out: <a href="http://sdk.webosarchive.org">http://sdk.webosarchive.org</a>. 
 
 Run `./Install-OSX.sh` on Mac, or `Install-Windows.cmd` on Windows with Admin privileges, then use `palm-generate` as usual to make a VSCode-ready project.
 
